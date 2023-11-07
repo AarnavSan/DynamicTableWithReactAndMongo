@@ -10,7 +10,7 @@ const mongoURI = process.env.MONGO_URI;
 
 const port = 5000;
 
-mongoose.connect('mongodb+srv://ioeserveruser:hvXjHwHKgWfZEF4k@cluster0.clj22dc.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongoURI', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB Atlas');
   })
